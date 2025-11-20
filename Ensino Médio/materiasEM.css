@@ -62,134 +62,16 @@ header a:focus::after{
     transform: scaleX(1);
 }
 
-/* Sobre Mim */
-.sobreMim{
-    margin: auto;
-    display: flex;
-    background-color: #364612;
-    border: solid 4px #8C8418;
-    border-radius: 10px;
-    padding: 10px;
-    width: 75%;
-    margin-bottom: 2%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-}
-
-.imagemSM{
-    width: 280px;
-    height: 280px;
-    margin-right: 20px;
-}
-.imagemSM img{
-    width: 280px;
-    height: 280px;
-    border-radius: 10px;
-}
-
-.cartaSM{
-    padding-top: 20px;
-    display: block;
-    text-align: center;
-}
-
-.cartaSM p{
-    width: 95%;
-    text-indent: 20px;
-    text-align: justify;
-    font-family: 'Inter';
-}
-
-.cartaSM img{
-    width: 10%;
-    height: 19%;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 10px;
-}
-
-.cartaSM img:hover{
-    transform: scale(1.1, 1.1);
-}
-
-/* Currículo */
-.curriculo{
-    text-align: center;
-    margin: auto;
-    display: block;
-    margin-bottom: 2%;
-}
-
-.curriculo h1{
-    font-size: 55px;
+.tituloPagina{
     font-family: 'Aclonica';
-    letter-spacing: 2px;
-    text-decoration: underline #8C8418 5px;
-}
-
-.curriculo img{
-    width: 30%;
-    height: auto;
-    margin-top: 10px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-}
-
-.curriculo button, .port23 button, .port24 button{
-    background-color: #759E1C;
-    border: solid 3px #B5AC28;
-    cursor: pointer;
-    font-family: 'Aclonica';
-    color: #fff;
-    width: 200px;
-    height: 35px;
-    border-radius: 10px;
-    font-size: 16px;
-    padding-top: 4px;
-    margin-top: 10px;
-    transition: 0.3s;
-}
-
-.curriculo button:hover, .port23 button:hover, .port24 button:hover{
-    background-color: #797216;
-    border: #797216;
-    color: #A9A9A9;
-}
-
-/* Portfólios Antigos */
-.portAntigos{
-    margin: auto;
+    font-size: 90px;
+    text-decoration: underline 5px #8C8418;
     text-align: center;
-    background-color: #364612;
-    border: solid 4px #8C8418;
-    border-radius: 10px;
-    padding: 10px;
-    width: 75%;
-    margin-bottom: 2%;
-    padding: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-}
-
-.portAntigos h1{
-    font-size: 55px;
-    font-family: 'Aclonica';
-    letter-spacing: 2px;
-    text-decoration: underline #8C8418 5px;
-    margin-bottom: 20px;
-}
-
-.portfolios{
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-}
-
-.portfolios img{
-    width: 420px;
-    height: 180px;
-    border-radius: 10px;
+    margin-top: 6%;
 }
 
 /* Modais */
+/* Modais Ensino Médio */
 .modalEM,
 .modalTec{
     position: fixed;

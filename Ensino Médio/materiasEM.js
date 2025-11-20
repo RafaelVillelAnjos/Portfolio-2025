@@ -1,11 +1,3 @@
-function Portfolio23(){
-    window.location.href = "https://www.canva.com/design/DAGlIHoU-Cc/eaUXCy7COgy8FqYXw4lOjA/edit?utm_content=DAGlIHoU-Cc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
-}
-
-function Portfolio24(){
-    window.location.href = "https://sites.google.com/estudante.sesisenai.org.br/portfolio-rafaelvillela/in%C3%ADcio";
-}
-
 const ModalManager = (function(){
     let active = null; 
 
@@ -121,4 +113,3 @@ window.ModalTec = function(){
     const trigger = document.getElementById('cursoTecnico') || document.querySelector('header a:nth-child(1)');
     ModalManager.toggle('.modalTec', trigger);
 };
-
