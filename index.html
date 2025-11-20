@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio 2025</title>   
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <link rel="icon" type="image/png" href="imagens/favicon.png"/>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <a id="cursoTecnico" onclick="ModalTec()">Curso técnico</a>
+        <a id="ensinoMedio" onclick="ModalEM()">Ensino Médio</a>
+        <a>Certificados</a>
+    </header>
+
+    <!-- Sobre mim -->
+    <div class="sobreMim">
+        <div class="imagemSM">
+            <img src="/Imagens/Foto-Eu.webp" alt="Uma foto minha"/>
+        </div>
+        
+        <div class="cartaSM">
+            <p>Meu nome é Rafael Villela dos Anjos, tenho 17 anos e estou atualmente terminando o Ensino Médio e o Curso Técnico na Escola Sesi™. Por volta de 2020 eu passei a ter interesse pela área da programação e comecei a estudar esse assunto de  maneira superficial, o que me levou a conversar com minha família sobre me matricular na Escola Sesi™.</p>
+            <p>Após o fim do Ensino Médio, pretendo começar a trabalhar, se possível com algo que tenha relação com a área da programação, e ingressar no curso de Sistemas da Informação na UFSC ou no curso de Ciência de Dados e Inteligência Artificial no Senai.</p>
+            <img src="./Imagens/Botão Olho Portfólio.png" onclick="RevelarCartaSm()"/>
+        </div>
+    </div>  
+
+    <!-- Currículo -->
+    <div class="curriculo">
+        <h1>Currículo</h1>
+        <img src="/Imagens/Currículo.png" alt="Foto do meu currículo"/>
+        <br>
+        <button>Visualizar</button>
+    </div>
+
+    <!-- Portfólios Antigos -->
+    <div class="portAntigos">
+        <h1>Portfólios Antigos</h1>
+
+        <div class='portfolios'>
+            <div class="port23">
+                <img src="/Imagens/Portifolio 2022.png" alt='Capa do meu portfólio de 2023'/>
+                <br>
+                <button onclick="Portfolio23()">Portfólio 2023</button>
+            </div>
+
+            <div class="port24">
+                <img src="/Imagens/Portfólio 2024.png" alt='Capa do meu portfólio de 2024'/>
+                <br>
+                <button onclick="Portfolio24()">Portfólio 2024</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modalEM">
+        <a href="">Matemática</a> 
+        <a href="">Linguagens</a>
+        <a href="">Natureza</a>
+        <a href="">Humanas</a>
+    </div>
+
+    <div class="modalTec">
+        <a href="">Desenvolvimento de Sistemas</a> 
+        <a href="">Modelagem de Sistemas</a>
+        <a href="">Banco de Dados</a>
+    </div>
+
+</body>
+</html>

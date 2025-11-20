@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Aclonica';
+    src: url(/Fontes/Aclonica-Fonte/Aclonica-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fontes/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+body{
+    background-color: #4E6719;
+    color: #fff;
+}
+
+/* Cabeçalho */
+header{
+    font-family: 'Aclonica';
+    color: #fff;
+    background-color: #364612;
+    padding: 20px;
+    font-size: 13px;
+    margin-bottom: 2%;
+}
+
+header a{
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 2px;
+}
+
+header a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: currentColor;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: 0.4s ease;
+}
+
+header a:hover,
+header a:focus{
+    color: #B5AC28;
+}
+
+header a:hover::after,
+header a:focus::after{
+    transform: scaleX(1);
+}
+
+/* Sobre Mim */
+.sobreMim{
+    margin: auto;
+    display: flex;
+    background-color: #364612;
+    border: solid 4px #8C8418;
+    border-radius: 10px;
+    padding: 10px;
+    width: 75%;
+    margin-bottom: 2%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.imagemSM{
+    width: 280px;
+    height: 280px;
+    margin-right: 20px;
+}
+.imagemSM img{
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+}
+
+.cartaSM{
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+.cartaSM p{
+    width: 95%;
+    text-indent: 20px;
+    text-align: justify;
+    font-family: 'Inter';
+}
+
+.cartaSM img{
+    width: 10%;
+    height: 19%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.cartaSM img:hover{
+    transform: scale(1.1, 1.1);
+}
+
+/* Currículo */
+.curriculo{
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom: 2%;
+}
+
+.curriculo h1{
+    font-size: 55px;
+    font-family: 'Aclonica';
+    letter-spacing: 2px;
+    text-decoration: underline #8C8418 5px;
+}
+
+.curriculo img{
+    width: 30%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.curriculo button, .port23 button, .port24 button{
+    background-color: #759E1C;
+    border: solid 3px #B5AC28;
+    cursor: pointer;
+    font-family: 'Aclonica';
+    color: #fff;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-top: 4px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.curriculo button:hover, .port23 button:hover, .port24 button:hover{
+    background-color: #797216;
+    border: #797216;
+    color: #A9A9A9;
+}
+
+/* Portfólios Antigos */
+.portAntigos{
+    margin: auto;
+    text-align: center;
+    background-color: #364612;
+    border: solid 4px #8C8418;
+    border-radius: 10px;
+    padding: 10px;
+    width: 75%;
+    margin-bottom: 2%;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.portAntigos h1{
+    font-size: 55px;
+    font-family: 'Aclonica';
+    letter-spacing: 2px;
+    text-decoration: underline #8C8418 5px;
+    margin-bottom: 20px;
+}
+
+.portfolios{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.portfolios img{
+    width: 420px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+/* Modais */
+/* Modais Ensino Médio */
+.modalEM,
+.modalTec{
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    background: linear-gradient(#3b6b11,#2f5a0f);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    padding: 6px;
+    min-width: 200px;
+    overflow: hidden;
+    transform-origin: top center;
+    will-change: transform, opacity;
+}
+
+.modalEM a,
+.modalTec a{
+    display: block;
+    padding: 10px 14px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+    transition: 0.3s;
+}
+.modalEM a:last-child,
+.modalTec a:last-child{ border-bottom: none; }
+
+.modalEM a:hover,
+.modalTec a:hover{
+    color: #B5AC28;
+}
+
+@keyframes modal-drop-in{
+    from{ opacity: 0; transform: translateY(-40px); }
+    to  { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes modal-lift-out{
+    from{ opacity: 1; transform: translateY(0); }
+    to  { opacity: 0; transform: translateY(-40px); }
+}
+
+.modalEM.show,
+.modalTec.show{
+    display: block;
+    animation: modal-drop-in 320ms cubic-bezier(.2,.9,.2,1) both;
+}
+.modalEM.hide,
+.modalTec.hide{
+    animation: modal-lift-out 260ms cubic-bezier(.4,0,.2,1) both;
+}
