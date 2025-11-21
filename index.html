@@ -14,7 +14,7 @@
     <header>
         <a id="cursoTecnico" onclick="ModalTec()">Curso técnico</a>
         <a id="ensinoMedio" onclick="ModalEM()">Ensino Médio</a>
-        <a>Certificados</a>
+        <a href="/Cerificados/certicados.html">Certificados</a>
     </header>
 
     <!-- Sobre mim -->
@@ -23,11 +23,39 @@
             <img src="/Imagens/Foto-Eu.webp" alt="Uma foto minha"/>
         </div>
         
-        <div class="cartaSM">
-            <p>Meu nome é Rafael Villela dos Anjos, tenho 17 anos e estou atualmente terminando o Ensino Médio e o Curso Técnico na Escola Sesi™. Por volta de 2020 eu passei a ter interesse pela área da programação e comecei a estudar esse assunto de  maneira superficial, o que me levou a conversar com minha família sobre me matricular na Escola Sesi™.</p>
-            <p>Após o fim do Ensino Médio, pretendo começar a trabalhar, se possível com algo que tenha relação com a área da programação, e ingressar no curso de Sistemas da Informação na UFSC ou no curso de Ciência de Dados e Inteligência Artificial no Senai.</p>
-            <img src="./Imagens/Botão Olho Portfólio.png" onclick="RevelarCartaSm()"/>
+        <div class="textoEbotao">
+            <div class="cartaSM" id="cartaSM">
+                <p>Meu nome é Rafael Villela dos Anjos, tenho 17 anos e estou atualmente terminando o Ensino Médio e o Curso Técnico na Escola Sesi™. Por volta de 2020 eu passei a ter interesse pela área da programação e comecei a estudar esse assunto de  maneira superficial, o que me levou a conversar com minha família sobre me matricular na Escola Sesi™.</p>
+                <p>Após o fim do Ensino Médio, pretendo começar a trabalhar, se possível com algo que tenha relação com a área da programação, e ingressar no curso de Sistemas da Informação na UFSC ou no curso de Ciência de Dados e Inteligência Artificial no Senai.</p>
+            </div>
+
+            <div class="esconder" id="ferramentas">
+                <h2>Ferramnetas que domino</h2>
+
+                <div class="logosFerramentas">
+                    <div class="linha1">
+                        <img src="/Imagens/Logo-HTML.png" alt='Imagem da logo do'>
+                        <img src="/Imagens/Logo-CSS.png" alt='Imagem da logo do'>
+                        <img src="/Imagens/Logo-JS.png" alt='Imagem da logo do'>
+                        <img src="/Imagens/Logo-React.png" alt='Imagem da logo do'>
+                        <img src="/Imagens/Logo-PG.png" alt='Imagem da logo do'>
+                        <img src="/Imagens/Logo-TS.png" alt='Imagem da logo do'>
+                    </div>
+
+                    <div class="linha2">
+                        <img src="/Imagens/Logo-Canva.png" alt='Imagem da logo do'>
+                        <img src="/Imagens/Logo-Lucid.png" alt='Imagem da logo do'>
+                        <img src="/Imagens/Logo-Figma.png" alt='Imagem da logo do'>
+                        <img src="/Imagens/Logo-Docs.png" alt='Imagem da logo do'>
+                        <img src="/Imagens/Logo-Planilhas.png" alt='Imagem da logo do'>
+                        <img src="/Imagens/Logo-Boots.png" alt='Imagem da logo do'>
+                    </div>
+                </div>
+            </div>
+                
+            <img class="botaoOlho" src="./Imagens/Botão Olho Portfólio.png" onclick="RevelarCartaSM()" id="botaoOlho"/>
         </div>
+
     </div>  
 
     <!-- Currículo -->
@@ -35,7 +63,7 @@
         <h1>Currículo</h1>
         <img src="/Imagens/Currículo.png" alt="Foto do meu currículo"/>
         <br>
-        <button>Visualizar</button>
+        <button onclick="VerCurriculo()">Visualizar</button>
     </div>
 
     <!-- Portfólios Antigos -->
@@ -57,18 +85,20 @@
         </div>
     </div>
 
+
     <!-- Modais -->
     <div class="modalEM">
-        <a href="/Ensino Médio/matematica.html">Matemática</a> 
-        <a href="">Linguagens</a>
-        <a href="">Natureza</a>
-        <a href="">Humanas</a>
+        <a href="/Ensino Médio/matematica.html">Matemática</a>
+        <a href="/Ensino Médio/linguagens.html">Linguagens</a>
+        <a href="/Ensino Médio/natureza.html">Natureza</a>
+        <a href="/Ensino Médio/humanas.html">Humanas</a>
     </div>
 
     <div class="modalTec">
-        <a href="">Desenvolvimento de Sistemas</a> 
-        <a href="">Modelagem de Sistemas</a>
-        <a href="">Banco de Dados</a>
+        <a href="/Ensino Médio/desenvolvimento.html">Desenvolvimento de Sistemas</a>
+        <a href="/Ensino Médio/modelagem.html">Modelagem de Sistemas</a>
+        <a href="/Ensino Médio/bancoDados.html">Banco de Dados</a>
+    </div>
     </div>
 
 </body>

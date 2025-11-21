@@ -87,7 +87,6 @@ header a:focus::after{
 }
 
 .cartaSM{
-    padding-top: 20px;
     display: block;
     text-align: center;
 }
@@ -99,16 +98,24 @@ header a:focus::after{
     font-family: 'Inter';
 }
 
-.cartaSM img{
-    width: 10%;
-    height: 19%;
+.botaoOlho{
+    width: 62px;
+    height: 47px;
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 10px;
+    margin-top: 5px;
+    position: static;
 }
 
-.cartaSM img:hover{
+.botaoOlho:hover{
     transform: scale(1.1, 1.1);
+}
+
+.textoEbotao{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 /* Currículo */
@@ -242,4 +249,34 @@ header a:focus::after{
 .modalEM.hide,
 .modalTec.hide{
     animation: modal-lift-out 260ms cubic-bezier(.4,0,.2,1) both;
+}
+
+/* Ferramnetas */
+#ferramentas{
+    background-color: #36461200;
+    padding: 5px;
+    width: 100%;
+}
+
+#ferramentas h2{
+    font-size: 30px;
+    text-decoration: underline #8C8418 5px;
+    font-family: 'Aclonica';
+    margin-bottom: 10px;
+}
+
+#ferramentas img{
+    width: 70px;
+    height: 100%;
+    margin-left: 10px;
+} #ferramentas img:first-child{
+    margin-left: 0;
+}
+
+#ferramenntas .kinha1, #ferramenntas .linha2{
+    width: 100%;
+}
+
+.esconder{
+    display: none;
 }

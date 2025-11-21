@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url(./Fontes/Inter/Inter-VariableFont_opsz\,wght.ttf);
+    src: url(/Fontes/Inter/static/Inter_18pt-Regular.ttf);
 }
 
 body{
@@ -70,8 +70,225 @@ header a:focus::after{
     margin-top: 6%;
 }
 
+/* Botõess */
+.botoesTrimestres{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.botoesTrimestres button{
+    background-color: #759E1C;
+    border: solid 3px #B5AC28;
+    cursor: pointer;
+    font-family: 'Aclonica';
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-top: 4px;
+    margin-top: 10px;
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+} 
+
+.botoesTrimestres button:hover{
+    background-color: #797216;
+    border: #797216;
+    color: #A9A9A9;
+}
+
+#btnTrimestre2{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.botoesTrimestres button:disabled{
+    background-color: #364612;
+    border: solid 3px #49450c;
+    color: #555555;
+    cursor: default;
+    box-shadow: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Atividades */
+.atividade, .atividadePasse{
+    margin: auto;
+    display: flex;
+    background-color: #364612;
+    border: solid 4px #8C8418;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 30px;
+    width: 95%;
+    height: fit-content;
+    margin-bottom: 2%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.imgAtv{
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.atividadePasse .imgAtv{
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.atividadePasse .imgAtv img{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    border: none;
+}
+
+.imgAtv img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imgAtv iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+#jornal .imgAtv img{
+    height: 200px;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+#jornal .imgAtv {
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+#ipes{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#ipes img{
+    width: 50%;
+    height: auto;
+}
+
+#guerraFria iframe{
+    width: 100%;
+    height: 270px;
+}
+
+#feb{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#feb img{
+    width: 90%;
+    height: 200px;
+}
+
+.textoEbotao{
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    padding-top: 20px;
+    position: relative;
+}
+
+#revista iframe{
+    width: 65%;
+    height: 500px;
+}
+
+#informa{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.atividadePasse .textoeBotao{
+    width: 50%;
+}
+
+#biografia .imgAtv{
+    width: 60%;
+}
+
+#biografia .imgAtv img{
+    width: 100%;
+    height: auto;
+}
+
+#biografia .textoEbotao{
+    width: 40%;
+}
+
+#redacoes img{
+    width: 50%;
+    height: 170px;
+} #redacoes img:last-child{
+    margin-top: 10px;
+}
+
+#arteConsome .imgAtv{
+    width: 60%;
+}
+
+#arteConsome .imgAtv img{
+    width: 100%;
+    height: auto;
+}
+
+#arteConsome .textoEbotao{
+    width: 40%;
+}
+
+.textoEbotao p{
+    text-align: justify;
+    font-family: 'Inter';
+    text-indent: 15px;
+} 
+
+.habilidades{
+    text-indent: 0px !important;
+    margin-top: 8px;
+}
+
+.textoEbotao h1{
+    font-family: 'Aclonica';
+    margin-bottom: 10px;
+    text-decoration: underline 3px #8C8418;
+    font-size: 37px;
+}
+
+.textoEbotao img{
+    width: 62px;
+    height: 47px;
+    cursor: pointer;
+    transition: 0.3s;
+    right: 20px;
+    bottom: 20px;
+}
+.textoEbotao img:hover{
+    transform: scale(1.1, 1.1); 
+}
+
 /* Modais */
-/* Modais Ensino Médio */
 .modalEM,
 .modalTec{
     position: fixed;

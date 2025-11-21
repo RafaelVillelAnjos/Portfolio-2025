@@ -6,6 +6,10 @@ function Portfolio24(){
     window.location.href = "https://sites.google.com/estudante.sesisenai.org.br/portfolio-rafaelvillela/in%C3%ADcio";
 }
 
+function VerCurriculo(){
+    window.location.href = 'https://www.canva.com/design/DAGlF5BD7LM/0TP3UtpZfNLJTl8XF_AH4A/edit?utm_content=DAGlF5BD7LM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton';
+}
+
 const ModalManager = (function(){
     let active = null; 
 
@@ -122,3 +126,16 @@ window.ModalTec = function(){
     ModalManager.toggle('.modalTec', trigger);
 };
 
+// Fazendo a carta de apresentação e as ferramentas aparecerem e desaparecerem
+const cartaSM = document.getElementById('cartaSM');
+const ferramentas = document.getElementById('ferramentas');
+const botaoOlho = document.getElementById('botaoOlho');
+
+const toggle = () => {
+    cartaSM.classList.toggle('esconder');
+    ferramentas.classList.toggle('esconder');
+}
+
+[botaoOlho].forEach((el) => {
+  el.addEventListener("click", () => toggle());
+});

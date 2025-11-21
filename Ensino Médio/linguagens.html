@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materiasEM.css">
+    <script src="materiasEM.js" defer></script>
+    <title>Linguagens</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html">Início</a>
+        <a id="cursoTecnico" onclick="ModalTec()">Curso técnico</a>
+        <a id="ensinoMedio" onclick="ModalEM()">Ensino Médio</a>
+        <a href="/Cerificados/certicados.html">Certificados</a>
+    </header>
+
+    <h1 class="tituloPagina">Linguagens</h1>
+
+    <div class="botoesTrimestres">
+        <button disabled onclick="ExibirTrimestre1()" id="btnTrimestre1">1º Trimestre</button>
+        <button onclick="ExibirTrimestre2()" id="btnTrimestre2">2º Trimestre</button>
+        <button onclick="ExibirTrimestre3()" id="btnTrimestre3">3ºTrimestre</button>
+    </div>
+
+    <div class="trimestre1" id="trimestre1">
+        <div class="atividade">
+            <div class="imgAtv" id="revista">
+                <iframe src="https://www.canva.com/design/DAGkvmh6ikk/MVGJteDGWG954bmbs55lTA/view?embed"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Revista Literária</h1>
+                <p>Nesse trabalho, eu e minha dupla criamos uma revista virtual com objetivo de armazenar atividades
+                    sobre as leituras obrigatórias que teremos que ler ao longo do ano, como “Memórias póstumas de Brás
+                    Cubas” e “Parque Industrial”.</p>
+                <p class="habilidades">Habilidade: H4, H14 e H17</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="RevistaLiteraria()">
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv">
+                <img src="/Imagens/NotaRedacao.png" class="notaRedação">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Nota Redação</h1>
+                <p>Nota da minha redação com o tema “Desafios para a inclusão social por meio dos esportes no Brasil”.
+                    Eu considero essa uma boa nota, mas percebo que ainda há muito o que melhorar, principalmente em
+                    relação à gramática e ao uso de repertórios socioculturais.</p>
+                <p class="habilidades">Habilidade: H6 e H8</p>
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv" id="revista">
+                <img src="/Imagens/Capa-Conto.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Reimaginação Conto "Pai Contra Mãe"</h1>
+                <p>Após a leitura do conto “Pai contra Mãe”, de Machado de Assis, minha dupla e eu reescrevemos a
+                    história sob o ponto de vista de outra personagem e recriamos a capa original com o auxílio de
+                    inteligência artificial.</p>
+                <p class="habilidades">Habilidade: H7, H9 e H10</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="Conto()">
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv" id="informa">
+                <img src="/Imagens/informaEnem.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Site Informa Enem</h1>
+                <p>Nessa atividade, eu e meu grupo criamos um site que contém diversas obras literárias,
+                    cinematográficas, dados estatísticos, entre outros tipos de repertório sociocultural que podem ser
+                    citados na redação do Enem para ajudar a desenvolver a tese do escritor. Fiquei responsável por
+                    montar a área dedicada ao repertório cinematográfico, na qual inclui os filmes “Que Horas Ela
+                    Volta?”, “A Onda” e “Ilha das Flores” como boas opções de citação.</p>
+                <p class="habilidades">Habilidade: H23</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="SiteEnem()">
+            </div>
+        </div>
+
+        <div class="atividade" id="biografia">
+            <div class="imgAtv">
+                <img src="/Imagens/Biografia-Profissional.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Biografia Profissional</h1>
+                <p>Nessa atividade eu escrevi minha própria biografia profissional, nela eu conto onde nasci, quando e
+                    por que entrei na Escola Sesi e qual carreira pretendo seguir no futuro.</p>
+                <p class="habilidades">Habilidade: H22</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="trimestre2" id="trimestre2" style="display: none;">
+        <div class="atividade" id="arteConsome">
+            <div class="imgAtv">
+                <img src="/Imagens/arte-consome.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>"Que Tipo de Arte Você Consome"</h1>
+                <p>A atividade proposta era escolher o meu artista, filme e música favorita e escrever textos explicando
+                    como foi meu primeiro contato com eles, e o porquê de serem meu favoritos em inglês, utilizando o
+                    simple past.</p>
+                <p class="habilidades">Habilidade: H11 e H25 </p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="ArteConsome()">
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv" id="revista">
+                <iframe src="https://www.canva.com/design/DAGkvmh6ikk/MVGJteDGWG954bmbs55lTA/view?embed"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Continuação Revista Literária</h1>
+                <p>Continuação da Revista Virtual iniciada no primeiro trimestre. Durante o segundo trimestre fizemos
+                    uma resenha sobre a graphic novel brasileira "O Outro Lado da Bola".</p>
+                <p class="habilidades">Habilidade: H4, H14 e H17</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="RevistaLiteraria()">
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv" id="redacoes">
+                <img src="/Imagens/redacao2.png">
+                <img src="/Imagens/redacao3.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Segunda e Terceira Redação</h1>
+                <p>Notas da segunda e da terceira aplicação da redação online do ano. Nas duas aplicações, considero que
+                    obtive um bom resultado, mas percebo que há o que melhorar.</p>
+                <p class="habilidades">Habilidade: H4, H14 e H17</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="trimestre3" id="trimestre3" style="display: none;">
+        <div class="atividade">
+            <div class="imgAtv">
+                <img src="/Imagens/redacao4.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Melhor Redação do Terceiro Trimestre</h1>
+                <p>Minha maior nota em readções no terceiro trimestre, que foi sobre o tema "Desafios para combater o
+                    racismo ambiental no Brasil". Nela, obtive um bom resultado nas Competências 1, 2 e 3, mas deixei a
+                    desejar nas Competência 4 e 5.</p>
+                <p class="habilidades">Habilidade: H6 e H8</p>
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv">
+            <iframe src="https://youtube.com/shorts/MGZUoUkaqPE?si=jCI_3HAdn9sRPSzP"></iframe>
+
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Reel Salim Miguel</h1>
+                <p>Vídeo curto modelo instagram (reel) sobre alguma construção de Florianópolis que apareça no livro
+                    Primeiro de Abril: Narrativas de cadeia do escritor Salim Miguel. Eu e minha dupla fizemos sobre a
+                    ponte Hercílio Luz e como os militares usavam ela para gerar medo nos presos.</p>
+                <p class="habilidades">Habilidade: H4 e H16</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="VideoSalim()">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modalEM">
+        <a href="/Ensino Médio/matematica.html">Matemática</a>
+        <a href="/Ensino Médio/linguagens.html">Linguagens</a>
+        <a href="/Ensino Médio/natureza.html">Natureza</a>
+        <a href="/Ensino Médio/humanas.html">Humanas</a>
+    </div>
+
+    <div class="modalTec">
+        <a href="/Ensino Médio/desenvolvimento.html">Desenvolvimento de Sistemas</a>
+        <a href="/Ensino Médio/modelagem.html">Modelagem de Sistemas</a>
+        <a href="/Ensino Médio/bancoDados.html">Banco de Dados</a>
+    </div>
+</body>
+
+</html>

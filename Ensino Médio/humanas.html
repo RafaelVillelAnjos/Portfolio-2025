@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materiasEM.css">
+    <script src="materiasEM.js" defer></script>
+    <title>Humanas</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html">Início</a>
+        <a id="cursoTecnico" onclick="ModalTec()">Curso técnico</a>
+        <a id="ensinoMedio" onclick="ModalEM()">Ensino Médio</a>
+        <a href="/Cerificados/certicados.html">Certificados</a>
+    </header>
+
+    <h1 class="tituloPagina">Humanas</h1>
+
+    <div class="botoesTrimestres">
+        <button disabled onclick="ExibirTrimestre1()" id="btnTrimestre1">1º Trimestre</button>
+        <button onclick="ExibirTrimestre2()" id="btnTrimestre2">2º Trimestre</button>
+        <button onclick="ExibirTrimestre3()" id="btnTrimestre3">3ºTrimestre</button>
+    </div>
+
+    <div class="trimestre1" id="trimestre1">
+        <div class="atividade">
+            <div class="imgAtv">
+                <img src="/Imagens/LinhaTempo.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Século da Humilhação Chinesa</h1>
+                <p>Após algumas aulas expositivas sobre esse momento da história da China, eu e meu grupo fizemos uma linha do tempo com os principais acontecimentos desse período na plataforma Padlet.</p>
+                <p class="habilidades">Habilidade: H10, H36, H39 e H40</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="SeculoChina()">
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv">
+                <iframe src="https://www.canva.com/design/DAGlU3lMtac/8TcCBT2WxJqc6voN5Ae4tw/watch?embed" class="canvaTaiwan"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Conflitos Geoplíticos</h1>
+                <p>Neste trabalho, meu grupo e eu realizamos uma pesquisa e montamos uma apresentação sobre os conflitos geopolíticos que envolvem a nação de Taiwan, abordando sua participação indireta no conflito Israelense-Palestino e suas tensões com a China. Com isso, conseguimos compreender com mais clareza a dinâmica do mundo multipolar atual.</p>
+                <p class="habilidades">Habilidade: H10, H36, H39 e H40</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="ConflitosTaiwan()">
+            </div>
+        </div>
+    </div>
+
+    <div class="trimestre2" id="trimestre2" style="display: none;">
+        <div class="atividade" id="jornal">
+            <div class="imgAtv">
+                <img src="/Imagens/Jornal-Guerra.png" alt="Imagem da manchete do jornal feito nesta atividade.">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Jornal de Época</h1>
+                <p>A atividade proposta era a criação de um jornal da época do fim da Primeira Guerra Mundial, ele deveria conter uma manchete principal, uma entrevista fictícia, uma charge ou propaganda da época e o editorial.</p>
+                <p class="habilidades">Habilidade: H39</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="JornaGuerra()">
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv">
+                <img src="/Imagens/Descolonizacao-Asia.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Fim da Segunda Guerra e a Descolonização da Ásia</h1>
+                <p>Após uma aula expositiva sobre o Fim da Segunda Guerra e suas consequências para mundo, devíamos escolher um país da África ou Ásia que se tornou independente durante esse período. Para esse trabalho, eu e meu grupo escolhemos as Filipinas.</p>
+                <p class="habilidades">Habilidade: H35</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="Filipinas()">
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv">
+                <img src="/Imagens/Dossie_Rep-Velha.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Dossiê República Velha</h1>
+                <p>Dossiê dos presidentes do Brasil no período de 1894 até 1930. Minha pesquisa foi sobre o presidente Nilo Peçanha e seu mandato, que durou de 1909 até 1910.</p>
+                <p class="habilidades">Habilidade: H10, H22, H26 e H27</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="RepVelha()">
+            </div>
+        </div>
+    </div>
+
+    <div class="trimestre3" id="trimestre3" style="display: none;">
+        <div class="atividade">
+            <div class="imgAtv" id="guerraFria">
+                <iframe src="https://www.canva.com/design/DAG5WUwRVFU/JAPd0XSlxHwb0OxEr3iMsQ/view?embed"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Guerra Fria</h1>
+                <p>Apresentação elaborada com o objetivo de fazer uma comparação das ações tomadas pelos Estados Unidos e a URSS durante a Guerra Fria. </p>
+                <p class="habilidades">Habilidade: H27, H28 e H29 </p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="GuerraFria()">
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv" id="ipes">
+                <img src="/Imagens/Ipes.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Engranagens da Ditadura Militar</h1>
+                <p>Infográfico sobre o Instituto de Pesquisas Econômicas e Sociais (IPES), uma das principais engrenagen para que o regime ditatorial fosse instaurado no Brasil que recebia apoio dos Estados Unidos.</p>
+                <p class="habilidades">Habilidade: H21 e H39 </p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="Ipes()">
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv" id="feb">
+                <img src="/Imagens/Feb.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Mapa Interativo Segunda Guerra Mundial</h1>
+                <p>Atividade feita em conjunto com toda a turma, onde cada dupla escolheu um acontecimento da Segunda Guerra Mundial, montou um site explicativo sobre o tem e interligou esse site com o mapa interativo. O meu tema foi sobre a participação do Brasil no conflito e suas batalhas na Itália</p>
+                <p class="habilidades">Habilidade: H10, H20, H21 e H27</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="BrasilGuerra()">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modalEM">
+        <a href="/Ensino Médio/matematica.html">Matemática</a>
+        <a href="/Ensino Médio/linguagens.html">Linguagens</a>
+        <a href="/Ensino Médio/natureza.html">Natureza</a>
+        <a href="/Ensino Médio/humanas.html">Humanas</a>
+    </div>
+
+    <div class="modalTec">
+        <a href="/Ensino Médio/desenvolvimento.html">Desenvolvimento de Sistemas</a>
+        <a href="/Ensino Médio/modelagem.html">Modelagem de Sistemas</a>
+        <a href="/Ensino Médio/bancoDados.html">Banco de Dados</a>
+    </div>
+</body>
+
+</html>

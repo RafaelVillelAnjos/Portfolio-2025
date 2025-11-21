@@ -1,33 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="materiasEM.css">
-    <script src="materiasEM.js"></script>
+    <script src="materiasEM.js" defer></script>
     <title>Matmática</title>
 </head>
+
 <body>
     <header>
+        <a href="/index.html">Início</a>
         <a id="cursoTecnico" onclick="ModalTec()">Curso técnico</a>
         <a id="ensinoMedio" onclick="ModalEM()">Ensino Médio</a>
-        <a>Certificados</a>
+        <a href="/Cerificados/certicados.html">Certificados</a>
     </header>
 
-    <h1 class="tituloPagina">Matmática</h1>
+    <h1 class="tituloPagina">Matemática</h1>
+
+    <div class="botoesTrimestres">
+        <button disabled onclick="ExibirTrimestre1()" id="btnTrimestre1">1º Trimestre</button>
+        <button onclick="ExibirTrimestre2()" id="btnTrimestre2">2º Trimestre</button>
+        <button onclick="ExibirTrimestre3()" id="btnTrimestre3">3ºTrimestre</button>
+    </div>
+
+    <div class="trimestre1" id="trimestre1">
+        <div class="atividade">
+            <div class="imgAtv">
+                <img src="/Imagens/Capa-Quebrando-Banca.jpg">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Questionário Quebrando a Banca</h1>
+                <p>Questionário com algumas perguntas sobre o filme "Quebrando a banca" respondido após o filme ter sido
+                    passado em aula. Além disso, elaborei um roteiro de um filme cuja temática central fosse algum
+                    conceito matemático, nele um professor de matemática, ao ir ao cabeleireiro, descobre que seu
+                    redemoinho segue perfeitamente a espiral de Fibonacci. A partir disso, ele começa a pesquisar e
+                    analisar seus arredores, percebendo que muitas coisas também seguem esse padrão, incluindo as
+                    galáxias. No fim da trama, o personagem principal transcende os conhecimentos mundanos ao descobrir
+                    a verdade sobre o universo.</p>
+                <p class="habilidades">Habilidade: H31 e H32</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="QuebrandoBanca()">
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv">
+                <iframe src="https://www.canva.com/design/DAGlCk3PBW4/Cyhpj1rDVLvW05e7etfLXw/view?embed"
+                    class="canvaBanca"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Criando a Banca</h1>
+                <p>Nessa atividade, meu grupo e eu criamos um jogo de cartas que envolve elementos matemáticos estudados
+                    em aula, como probabilidades, o princípio fundamental da contagem e a análise combinatória.
+                    Resumidamente, para jogar são necessários dois jogadores, e vence aquele que conseguir formar três
+                    grupos de cartas cuja soma dos valores esteja entre 21 e 26. Os grupos devem ser formados em ordem
+                    crescente ou decrescente, de acordo com a vontade do jogador. O jogo também possui cartas especiais,
+                    que podem ajudar a alcançar a vitória ou atrapalhar o oponente.</p>
+                <p class="habilidades">Habilidade: H30 e H31</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="CriandoBanca()">
+            </div>
+        </div>
+    </div>
+
+    <div class="trimestre2" id="trimestre2" style="display: none;">
+        <div class="atividade">
+            <div class="imgAtv">
+                <iframe src="https://www.canva.com/design/DAGxBM9Cz9E/HxxFFm0MZei-UeY557mvSw/view?embed"
+                    class="canvaBanca"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Pesquisa Estatística</h1>
+                <p>A proposta de atividade era escolher um tema para uma pesquisa que pudesse ser realizada no colégio,
+                    criar um formulário no GoogleForms, disponibilizá-lo para que os outros estudantes pudessem
+                    responde-lo, analizar as respostas e interpretar os dados obtidos. A escolha para o tema de minha
+                    pesquisa foi o que os alunos pretendiam fazer após o fim do Ensino Médio.</p>
+                <p class="habilidades">Habilidade: H27, H28 e H29 </p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="PesquisaEstatistica()">
+            </div>
+        </div>
+
+        <div class="atividadePasse">
+            <div class="imgAtv">
+                <img src="/Imagens/nota-passe.png" class="notaPasse">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Nota do Passe de Matemática</h1>
+                <p>Meu desempenho no primeiro Avalia Sesi de matemática, onde consegui alcançar um bom resultado</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="trimestre3" id="trimestre3" style="display: none;">
+        <div class="atividade">
+            <div class="imgAtv">
+                <iframe src="https://www.canva.com/design/DAG5Rtynh4E/mZuqrSC5FDgQKg8za9CCTg/view?embed"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Bolo de Caneca</h1>
+                <p>Estudo sobre proporções usando como objeto de estudos uma receita de bolo de caneca. Eu e meu grupo escolhemos a receita, calculamos quanto seria em gasto e a quantidade de ingredientes necessária para replicar essa receita para uma pessoa, para a equipe e para toda a turma.</p>
+                <p class="habilidades">Habilidade: H33</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="BoloCaneca()">
+            </div>
+        </div>
+    </div>
 
     <!-- Modais -->
     <div class="modalEM">
-        <a href="/Ensino Médio/matematica.html">Matemática</a> 
-        <a href="">Linguagens</a>
-        <a href="">Natureza</a>
-        <a href="">Humanas</a>
+        <a href="/Ensino Médio/matematica.html">Matemática</a>
+        <a href="/Ensino Médio/linguagens.html">Linguagens</a>
+        <a href="/Ensino Médio/natureza.html">Natureza</a>
+        <a href="/Ensino Médio/humanas.html">Humanas</a>
     </div>
 
     <div class="modalTec">
-        <a href="">Desenvolvimento de Sistemas</a> 
-        <a href="">Modelagem de Sistemas</a>
-        <a href="">Banco de Dados</a>
+        <a href="/Ensino Médio/desenvolvimento.html">Desenvolvimento de Sistemas</a>
+        <a href="/Ensino Médio/modelagem.html">Modelagem de Sistemas</a>
+        <a href="/Ensino Médio/bancoDados.html">Banco de Dados</a>
     </div>
 </body>
+
 </html>
