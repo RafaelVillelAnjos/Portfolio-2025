@@ -163,3 +163,8 @@ function Tempfy1(){
 function PrototipagemTelas(){
     window.location.href = 'https://www.figma.com/design/uG9zOBpLyHdLRrpyMeaCOx/S.A-Tempfy?node-id=211-371&t=ixl9fIf0aCo6RNDr-1'
 }
+
+// Desenvolvimento de sistemas
+function CrudFuncional(){
+    window.location.href = 'https://github.com/RafaelVillelAnjos/teste-CRUD.git'
+}

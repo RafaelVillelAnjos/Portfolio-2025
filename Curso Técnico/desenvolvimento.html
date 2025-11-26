@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materias.css">
+    <script src="materias.js"></script>
+    <title>Desenvolvimento de Sistemas</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html">Início</a>
+        <a id="cursoTecnico" onclick="ModalTec()">Curso técnico</a>
+        <a id="ensinoMedio" onclick="ModalEM()">Ensino Médio</a>
+    </header>
+
+    <h1 class="tituloPaginaDes">Desenvolvimento de Sistemas</h1>
+
+    <h2 class="subTituloPagina">Terceiro Trimestre</h2>
+
+    <div class="atividade" id="CRUD">
+        <div class="imgAtv">
+            <img src="/Imagens/CRUD.png">
+        </div>
+
+        <div class="textoEbotao">
+            <h1>Sistema CRUD Funcional</h1>
+            <p>Um sistema de CRUD funcional que lista os usuários cadastrados em uma tabela. O sistema foi feito com node.js e o banco de dados no PgAdmin 4.</p>
+            <p class="habilidades">Habilidade: H1, H2, H3 e H4.</p>
+            <img src="/Imagens/Botão Olho Portfólio.png" onclick="CrudFuncional()">
+        </div>
+    </div>
+
+
+    <!-- Modais -->
+    <div class="modalEM">
+        <a href="/Ensino Médio/matematica.html">Matemática</a>
+        <a href="/Ensino Médio/linguagens.html">Linguagens</a>
+        <a href="/Ensino Médio/natureza.html">Natureza</a>
+        <a href="/Ensino Médio/humanas.html">Humanas</a>
+    </div>
+
+    <div class="modalTec">
+        <a href="/Curso Técnico/desenvolvimento.html">Desenvolvimento de Sistemas</a>
+        <a href="/Curso Técnico/modelagem.html">Modelagem de Sistemas</a>
+        <a href="/Curso Técnico/bancoDados.html">Banco de Dados</a>
+    </div>
+
+</body>
+</html>

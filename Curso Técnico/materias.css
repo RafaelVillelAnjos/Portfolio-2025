@@ -70,6 +70,14 @@ header a:focus::after{
     margin-top: 6%;
 }
 
+.tituloPaginaDes{
+    font-family: 'Aclonica';
+    font-size: 70px;
+    text-decoration: underline 5px #8C8418;
+    text-align: center;
+    margin-top: 6%;
+}
+
 .subTituloPagina{
     font-family: 'Aclonica';
     font-size: 70px;
@@ -115,12 +123,19 @@ header a:focus::after{
     border: none;
 }
 
-#modeloLogico .imgAtv, #figmaTempfy .imgAtv{
+
+
+#modeloLogico .imgAtv, #figmaTempfy .imgAtv, #CRUD .imgAtv{
     width: 55%;
 }
 
-#modeloLogico .textoEbotao, #figmaTempfy .textoEbotao{
+#modeloLogico .textoEbotao, #figmaTempfy .textoEbotao, #CRUD .textoEbotao{
     width: 45%;
+}
+
+#CRUD .imgAtv img{
+    width: 90%;
+    height: 200px;
 }
 
 #requisitos .imgAtv img{
