@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materiasEM.css">
+    <script src="materiasEM.js" defer></script>
+    <title>Natureza</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html">Início</a>
+        <a id="cursoTecnico" onclick="ModalTec()">Curso técnico</a>
+        <a id="ensinoMedio" onclick="ModalEM()">Ensino Médio</a>
+    </header>
+
+    <h1 class="tituloPagina">Natureza</h1>
+
+    <div class="botoesTrimestres">
+        <button disabled onclick="ExibirTrimestre1()" id="btnTrimestre1">1º Trimestre</button>
+        <button onclick="ExibirTrimestre2()" id="btnTrimestre2">2º Trimestre</button>
+        <button onclick="ExibirTrimestre3()" id="btnTrimestre3">3ºTrimestre</button>
+    </div>
+
+    <div class="trimestre1" id="trimestre1">
+        <div class="atividade">
+            <div class="imgAtv">
+            <iframe src="https://www.canva.com/design/DAGlYyoq7_g/GIu-9oyuTHgiGebq5tzE0g/view?embed"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Tipos de Poluição</h1>
+                <p>Depois de uma aula explicativa sobre os diferentes tipos de poluição existentes, eu e meu grupo pesquisamos sobre a utilização de produtos químicos em plantações e montamos uma apresentação sobre o assunto. Após a pesquisa, nós passamos a compreender de maneira mais clara os malefícios que esses produtos podem podem causar quando ingeridos, além dos impactos ao meio ambiente.</p>
+                <p class="habilidades">Habilidade: H1, H2 e H4.</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="TiposPoluicao()">
+            </div>
+        </div>
+
+        <div class="atividade" id="mapaMental">
+            <div class="imgAtv">
+                <img src="/Imagens/MapaMental.jpg" class="notaRedação">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Mapa Mental Eletrostática</h1>
+                <p>Nessa atividade eu precisei criar um mapa mental sobre eletrostática, nele está explicado como calcular a intensidade de uma corrente elétrica, a força elétrica entre corpos, a força de um campo elétrico, o que são cargas elétricas as diferentes formas de eletrizar um corpo.</p>
+                <p class="habilidades">Habilidade: H29, H30 e H31</p>
+            </div>
+        </div>
+
+        <div class="atividade" id="industria">
+            <div class="imgAtv">
+                <iframe src="https://www.canva.com/design/DAGiR7ISGZ0/68bju4EV0pyf8z4TOpz4zQ/view?embed"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Estequiometria na Indústria Brasileira</h1>
+                <p>Após algumas aulas expositivas sobre o que é estequiometria e como realizar cálculos estequiométricos, eu e meu grupo pesquisamos como esse assunto é aplicado na indústria metalúrgica brasileira.</p>
+                <p class="habilidades">Habilidade: H7, H9 e H10</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="Industria()">
+            </div>
+        </div>
+
+        <div class="atividade" id="industria">
+            <div class="imgAtv">
+                <img src="/Imagens/MemeEvolução.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Meme Evolucionista</h1>
+                <p>Nessa atividade, eu criei um meme utilizando como base teorias evolutivas. Na imagem em questão, algumas etapas da evolução da espécie humana estão enfileiradas, representando seu avanço ao longo do tempo. Porém, ao se deparar com o humano atual, representado pelo meu grande amigo Lucas Russeff, o Homo sapiens exclama para as etapas anteriores recuarem, renegando o estado atual da raça humana.</p>
+                <p class="habilidades">Habilidade: H15 e H18</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="trimestre2" id="trimestre2" style="display: none;">
+        <div class="atividade" id="mapaMental">
+            <div class="imgAtv">
+            <iframe src="https://www.canva.com/design/DAGrdmh5854/RUGh7YlkRrZkULSFKWB4fA/view?embed"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Mapa Mental Vacinas e Sistema Imunológico</h1>
+                <p>Após algumas aulas expositivas sobre como as vacinas e o sistema imunológico do nosso corpo funcionam, criei esse mapa mental, utilizando o Canva, com os principais pontos desses dois assuntos.</p>
+                <p class="habilidades">Habilidade: H23</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="Vacinas()">
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv" id="revista">
+            <iframe src="https://www.canva.com/design/DAGxH0M6GtY/ZHVpuQdif8jA0reNdOe_zQ/view?embed"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Glossário de Eletroquímica</h1>
+                <p>Glossário técnico e ilustrado sobre eletroquímica e eletricidade com os principais conceitos desses temas, destacando definições, aplicações cotidianas, fórmulas matemáticas relevantes e ilustrações explicativas.</p>
+                <p class="habilidades">Habilidade: H6, H7 e H9</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="GlossarioEltro()">
+            </div>
+        </div>
+
+        <div class="atividade" id="campoEletro">
+            <div class="imgAtv">
+                <img src="/Imagens/capa-site-campo.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Site Explicativo Sobre o Campo Magnético Terrestre</h1>
+                <p>Site explicativo sobre o campo eletrmoagnético terrestre e as auroras polares (autrais e boreais). Nele é explicado o que é o campo magnético terrestre, como ele funciona, como ele é formado, sua importância para a vida na Terra, uma linha do tempo com os principais estudos sobre ele ao longa da história e como ele é responsável por forma asu auroras polares.</p>
+                <p class="habilidades">Habilidade: H4, H14 e H17</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="CampoEletro()">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="trimestre3" id="trimestre3" style="display: none;">
+        <div class="atividade">
+            <div class="imgAtv">
+                <iframe src="https://www.canva.com/design/DAG5jS0DdgM/QF4riUfG5jqQJSqY16aZHw/view?embed"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Energia: Passado, Presente e Futuro</h1>
+                <p>Após algumas aulas estudando sobre como o ser humano manipula a energia elétrica e seus impactos em nossas vidas, o professor propôs uma atividade para imaginarmos como um aparelho que usamos no dia a dia evoluiria no decorrer dos anos. Eu e meu grupo escolhemos a air fryer para esse trabalho</p>
+                <p class="habilidades">Habilidade: H1, H2, H5 e H9</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="Energia()">
+
+            </div>
+        </div>
+
+        <div class="atividade">
+            <div class="imgAtv">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QJ7ufPPu5yg?si=sFDygd0qmPeXHCCl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Mini Documentário Sobre Separação Por Arraste a Vapor</h1>
+                <p>Ao longo de algumas aulas, estudei sobre os óleos essênciais de plantas, os benefícios que eels podem trazer para a saúde e formas de extraí-los. Após isso, eu e meu grupo elaboramos um mini documentário sobre a separação por arraste a vapor, que é o principal método uasado para estrair óleos de plantas.</p>
+                <p class="habilidades">Habilidade: H24, H25, H26, H27 e H28</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="DocArraste()">
+            </div>
+        </div>
+
+        <div class="atividade" id="analiseEspec">
+            <div class="imgAtv">
+                <img src="/Imagens//Analise-Especto.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Métodos de Separação e Análise</h1>
+                <p>Ao longo de algumas aulas, estudei sobre os óleos essênciais de plantas, os benefícios que eels podem trazer para a saúde e formas de extraí-los. Após isso, eu e meu grupo elaboramos um mini documentário sobre a separação por arraste a vapor, que é o principal método uasado para estrair óleos de plantas.</p>
+                <p class="habilidades">Habilidade: H24, H25, H26, H27 e H28</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="AnaliseEspec()">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modais -->
+    <div class="modalEM">
+        <a href="/Ensino Médio/matematica.html">Matemática</a>
+        <a href="/Ensino Médio/linguagens.html">Linguagens</a>
+        <a href="/Ensino Médio/natureza.html">Natureza</a>
+        <a href="/Ensino Médio/humanas.html">Humanas</a>
+    </div>
+
+    <div class="modalTec">
+        <a href="/Curso Técnico/desenvolvimento.html">Desenvolvimento de Sistemas</a>
+        <a href="/Curso Técnico/modelagem.html">Modelagem de Sistemas</a>
+        <a href="/Curso Técnico/bancoDados.html">Banco de Dados</a>
+    </div>
+</body>
+
+</html>

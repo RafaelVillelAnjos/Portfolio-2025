@@ -221,3 +221,35 @@ function VideoSalim(){
     window.location.href = 'https://youtube.com/shorts/MGZUoUkaqPE?si=1jOYBoBtHc0JU1GI' 
 }
 
+// Natureza
+function TiposPoluicao(){
+    window.location.href = 'https://www.canva.com/design/DAGlYyoq7_g/YE-RbucgdcOOFAtwlE3KXQ/edit?utm_content=DAGlYyoq7_g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
+}
+
+function Industria(){
+    window.location.href = 'https://www.canva.com/design/DAGiFJXWfhE/P0BFjzLSTHJbetTYESd0NQ/edit?utm_content=DAGiFJXWfhE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
+}
+
+function Vacinas(){
+    window.location.href = 'https://www.canva.com/design/DAGrdmh5854/O8tnRQehuU9jsCjKfyQZmQ/edit?utm_content=DAGrdmh5854&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
+}
+
+function GlossarioEltro(){
+    window.location.href = 'https://www.canva.com/design/DAGxH0M6GtY/zyrTYLdE-qMOLuY3G6LOtw/edit?utm_content=DAGxH0M6GtY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
+}
+
+function CampoEletro(){
+    window.location.href ='https://sites.google.com/estudante.sesisenai.org.br/campo-magntico-terra/in%C3%ADcio'
+}
+
+function Energia(){
+    window.location.href = 'https://www.canva.com/design/DAGzzF9CyBM/Czf9_t3_ZtLJFM1YV7Lp5A/edit?utm_content=DAGzzF9CyBM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' 
+}
+
+function DocArraste(){
+    window.location.href = 'https://youtu.be/QJ7ufPPu5yg?si=W4OhsfN_vFXM_0jw'    
+}
+
+function AnaliseEspec(){
+    window.location,href = 'https://padlet.com/romuelsilva/trabalhos-3b-uey7nsvc5mrg9ucp?frame_id=page%3A3aFgZbc0ivDqae4BiEkZh'
+}

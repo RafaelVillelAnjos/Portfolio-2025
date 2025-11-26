@@ -162,6 +162,53 @@ header a:focus::after{
     border: none;
 }
 
+#mapaMental .imgAtv{
+    width: 65%;
+}
+
+#mapamMental .textoEbotao{
+    width: 35%;
+}
+
+#mapaMental .imgAtv img{
+    width: 100%;
+    height: auto;
+}
+
+#campoEletro .imgAtv{
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#campoEletro .textoEbotao{
+    width: 50%;
+}
+
+#campoEletro .imgAtv img{
+    width: 100%;
+    height: auto;
+}
+
+#mapaMental .imgAtv iframe{
+    width: 92.4%;
+    height: 330px;
+}
+
+#industria .imgAtv{
+    width: 55%;
+}
+
+#industria .textoEbotao{
+    width: 45%;
+}
+
+#industria .imgAtv iframe{
+    width: 78.5%;
+    height: 100%;
+}
+
 #jornal .imgAtv img{
     height: 200px;
     justify-content: center;
@@ -256,6 +303,22 @@ header a:focus::after{
 
 #arteConsome .textoEbotao{
     width: 40%;
+}
+
+#analiseEspec .imgAtv img{
+    width: 95%;
+    height: auto;
+}
+
+#analiseEspec .imgAtv{
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#analiseEspec .textoEbotao{
+    width: 45%;
 }
 
 .textoEbotao p{

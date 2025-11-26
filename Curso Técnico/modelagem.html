@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materias.css">
+    <script src="materias.js" defer></script>
+    <title>Modelagem de Sistemas</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html">Início</a>
+        <a id="cursoTecnico" onclick="ModalTec()">Curso técnico</a>
+        <a id="ensinoMedio" onclick="ModalEM()">Ensino Médio</a>
+    </header>
+
+    <h1 class="tituloPagina">Modelagem de Sistemas</h1>
+
+    <div class="botoesTrimestres">
+        <button disabled onclick="ExibirTrimestre1()" id="btnTrimestre1">1º Trimestre</button>
+        <button onclick="ExibirTrimestre2()" id="btnTrimestre2">2º Trimestre</button>
+    </div>
+
+    <div class="trimestre1" id="trimestre1">
+        <div class="atividade" id="requisitos">
+            <div class="imgAtv">
+                <img src="/Imagens/Tabela-Requisitos.png">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Tabela de Requisitos e Regras de Negócios</h1>
+                <p>Nessa atividade eu montei uma planilha contendo os requisitos funcionais e não funcionais de um aplicativo de uma hamburgueria e, também, as suas regras de negócios. Essa atividade me ajudou a compreender as diferenças entre requisitos funcionais, não funcionais e regras de negócios e a importância de defini-los previamente.</p>
+                <p class="habilidades">Habilidade: H1, H2, H3, H4, H6, H7.</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="TabelaRequisitos()">
+            </div>
+        </div>
+
+        <div class="atividade" id="tempfy1">
+            <div class="imgAtv">
+                <iframe src="https://www.canva.com/design/DAGlaVhtrA8/ATqomPuYJzyEBgkejbNZPw/view?embed"></iframe>
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Primeira Apresentação da S.A.</h1>
+                <p>Após desenvolver nossa ideia de projeto para a SA, os requisitos funcionais e não funcionais para seu site e aplicativo e suas regras de negócios, eu e meu grupo montamos essa apresentação para mostrar nossas ideias para a turma. Basicamente, nossa proposta é uma empresa que produz monitoradores de temperatura para aparelhos eletrônicos, que, ao detectarem altas temperaturas, desligam o aparelho automaticamente para evitar maiores prejuízos à empresa.</p>
+                <p class="habilidades">Habilidade: H30 e H31</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="Tempfy1()">
+            </div>
+        </div>
+    </div>
+
+    <div class="trimestre2" id="trimestre2" style="display: none;">
+        <div class="atividade" id="figmaTempfy">
+            <div class="imgAtv">
+                <img src="/Imagens/Figma-Tempfy.png" alt="">
+            </div>
+
+            <div class="textoEbotao">
+                <h1>Prototipagem da S.A.</h1>
+                <p>Prototipagem das telas do site e do aplicativo de minha S.A, feitas na plataforma Figma. No site, foram prototipadas telas onde o usuário pode comprar nossos produtos, entarar em contato conosco e entender quem somos, o que são nossos produto e nossos objetivos. Já no aplicativo, foram prototipadas telas onde o usuário pode monitorar a temperatura de seus aparelhos de maneira individual ou geral, cadastrar ou comprar mais monitores.</p>
+                <p class="habilidades">Habilidade: H1 a H7</p>
+                <img src="/Imagens/Botão Olho Portfólio.png" onclick="PrototipagemTelas()">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modalEM">
+        <a href="/Ensino Médio/matematica.html">Matemática</a>
+        <a href="/Ensino Médio/linguagens.html">Linguagens</a>
+        <a href="/Ensino Médio/natureza.html">Natureza</a>
+        <a href="/Ensino Médio/humanas.html">Humanas</a>
+    </div>
+
+    <div class="modalTec">
+        <a href="/Curso Técnico/desenvolvimento.html">Desenvolvimento de Sistemas</a>
+        <a href="/Curso Técnico/modelagem.html">Modelagem de Sistemas</a>
+        <a href="/Curso Técnico/bancoDados.html">Banco de Dados</a>
+    </div>
+</body>
+</html>
