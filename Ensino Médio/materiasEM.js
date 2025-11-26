@@ -251,5 +251,5 @@ function DocArraste(){
 }
 
 function AnaliseEspec(){
-    window.location,href = 'https://padlet.com/romuelsilva/trabalhos-3b-uey7nsvc5mrg9ucp?frame_id=page%3A3aFgZbc0ivDqae4BiEkZh'
+    window.location.href = 'https://padlet.com/romuelsilva/trabalhos-3b-uey7nsvc5mrg9ucp?frame_id=page%3A3aFgZbc0ivDqae4BiEkZh'
 }
