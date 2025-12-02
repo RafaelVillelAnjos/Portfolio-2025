@@ -253,3 +253,41 @@ function DocArraste(){
 function AnaliseEspec(){
     window.location.href = 'https://padlet.com/romuelsilva/trabalhos-3b-uey7nsvc5mrg9ucp?frame_id=page%3A3aFgZbc0ivDqae4BiEkZh'
 }
+
+// Show an image preview modal for certificate thumbnails (called from onclick="CertificadoToeic(this)")
+window.CertificadoToeic = function(imgElem){
+    if(!imgElem) return;
+
+    // Create modal if not present
+    let modal = document.getElementById('globalImageModal');
+    if(!modal){
+        modal = document.createElement('div');
+        modal.id = 'globalImageModal';
+        modal.className = 'image-modal';
+        modal.innerHTML = `
+            <div class="image-modal__content" role="dialog" aria-modal="true">
+                <img src="" alt="Visualização do certificado" />
+            </div>`;
+        document.body.appendChild(modal);
+
+        // close when clicking outside the content
+        modal.addEventListener('click', function(e){
+            if(e.target === modal) closeModal();
+        });
+
+
+        // close on ESC
+        document.addEventListener('keydown', function escHandler(e){
+            if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+        });
+    }
+
+    const img = modal.querySelector('img');
+    img.src = imgElem.src;
+    modal.classList.add('open');
+
+    function closeModal(){
+        // remove 'open' to trigger close animation
+        modal.classList.remove('open');
+    }
+}
