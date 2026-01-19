@@ -168,3 +168,7 @@ function PrototipagemTelas(){
 function CrudFuncional(){
     window.location.href = 'https://github.com/RafaelVillelAnjos/teste-CRUD.git'
 }
+
+function SiteTempfy(){
+    window.location.href = 'https://github.com/RafaelVillelAnjos/Site-Tempfy.git'
+}

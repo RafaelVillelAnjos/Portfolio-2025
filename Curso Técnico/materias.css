@@ -125,17 +125,22 @@ header a:focus::after{
 
 
 
-#modeloLogico .imgAtv, #figmaTempfy .imgAtv, #CRUD .imgAtv{
+#modeloLogico .imgAtv, #figmaTempfy .imgAtv, #CRUD .imgAtv, #Tempfy .imgAtv{
     width: 55%;
 }
 
-#modeloLogico .textoEbotao, #figmaTempfy .textoEbotao, #CRUD .textoEbotao{
+#modeloLogico .textoEbotao, #figmaTempfy .textoEbotao, #CRUD .textoEbotao, #Tempfy .textoEbotao{
     width: 45%;
 }
 
 #CRUD .imgAtv img{
     width: 90%;
     height: 200px;
+}
+
+#Tempfy .imgAtv img{
+    width: 90%;
+    height: 100%;
 }
 
 #requisitos .imgAtv img{
